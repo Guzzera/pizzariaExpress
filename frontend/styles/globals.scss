@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --eng_orange: #C20114;
+  --emerald_green: #009246;
+  --light_orange: #FCDEBE;
+  --desert_sand: #E9E4DA;
+  --smoky_black: #14110F;
+}
+
+button{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body{
+  background: var(--light_orange);
+}
+
+body, input, textarea, select, button{
+  font: 400 1rem sans-serif; //1rem = 16px
+}
+
+
+@media (max-width: 720px){
+  html{
+    font-size: 87.5%; // 14px
+  }
+}
+
+@media (max-width: 1080px){
+  html{
+    font-size: 93.75%; // 15px
+  }
+}

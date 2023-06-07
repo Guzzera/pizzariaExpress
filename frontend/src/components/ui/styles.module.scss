@@ -1,0 +1,48 @@
+.input{
+    margin-bottom: 1rem;
+    height: 40px;
+    border: 0;
+    border-radius: 0.5rem;
+    background-color: var(--emerald_green);
+    color: var(--desert_sand);
+    padding: 1rem;
+    border: 1px solid white;
+}
+
+.input::placeholder{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.button{
+    max-width: 600px;
+    background-color: var(--eng_orange);
+    border: 0;
+    padding: 0.4rem;
+    color: var(--desert_sand);
+    border-radius: 0.5rem;
+    transition: filter 0.2s;
+
+    &[disabled]{
+       cursor: not-allowed;
+       svg{
+        animation: animateLoad 2s infinite;
+       }
+    }
+
+    &:hover{
+        filter: brightness(1.10);
+    }
+}
+
+@keyframes animateLoad{
+    from{
+       transform: rotate(0deg);
+    }
+    to{
+       transform: rotate(360deg);
+    }
+}
+
+.buttonText{
+    color: var(--desert_sand);
+}

@@ -1,0 +1,1 @@
+# O projeto é consolidado entre frontend, backend e mobile. O garçom abre uma mesa para clientes e envia o pedido pra cozinha, onde quem está administrando os pedidos vão receber na tela em tempo real quais pedidos, mesa e quantidade.
