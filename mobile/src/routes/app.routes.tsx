@@ -10,7 +10,10 @@ export type StackParamList = {
   number: number | string;
   order_id: string;
  };
- FinishOrder: undefined;
+ FinishOrder: {
+  number: number | string;
+  order_id: string;
+ };
 }
 
 const Stack = createNativeStackNavigator<StackParamList>();
@@ -31,7 +34,13 @@ function AppRoutes(){
         <Stack.Screen
           name='FinishOrder'
           component={FinishOrder}
-          options={{headerShown: true}}
+          options={{
+            title: 'Finalizando',
+            headerStyle:{
+              backgroundColor: '#FCDEBE'
+            },
+            headerTintColor: '#14110F'
+          }}
         />
        </Stack.Navigator>
     )
